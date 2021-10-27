@@ -15,16 +15,17 @@ This data comes from the Inside Airbnb website, which is an open source tool for
 * https://www.kaggle.com/new-york-city/nyc-cultural-institutions-by-block-and-lot?select=cultural-institutions-by-block-and-lot.csv
 
 #### Metric
-My target I will be looking at the 'has_availability' column to see if the a listing is available to be booked or not. For this project my target is binary so I will be working with classifiaction models. For my metric I will be looking at accuracy and precision. For accuracy I will be looing how accurate my models are preforming and for precision I will be looking how well my model is correctly predicting if my listing has availability to be booked or not. 
+For my target I will be looking at the 'has_availability' column to see if the a listing is available to be booked or not. For this project my target is binary so I will be working with classifiaction models. For my metric I will be looking at accuracy and precision. For accuracy I will be looing how accurate my models are preforming and for precision I will be looking how well my model is correctly predicting if my listing has availability to be booked or not. 
 
 # Exploritory Data Analysis
 
-* A boxplot of the number of amentities for a listing based on if the listing is available to be booked or no.
+* A boxplot of the number of amentities for a listing based on if the listing is available to be booked or no. Looking at this graph it is showing listing with no availiability had generally less amenities than those that did have availiability. So for an airbnb host, having a lot of amenities does not necessarily mean more bookings.
 
 ![image](https://user-images.githubusercontent.com/40476299/139118325-b1907b0e-27dc-4767-9cd4-6de69782f317.png)
 
- * Above the graph shows the number of reviews based on availiablity. You would think having more reviews would increase the chance of the listing to be booked but with this graph it is showing the opposite.
- 
+ * Below the graph shows the number of reviews based on availiablity. You would think having more reviews would increase the chance of the listing to be booked but with this graph it is showing the opposite.
+
+
 ![image](https://user-images.githubusercontent.com/40476299/139117944-2cc5f0c1-2a00-4dcc-9a1c-622c92bd1628.png)
 
 
@@ -39,9 +40,11 @@ My target I will be looking at the 'has_availability' column to see if the a lis
 
 
 # Modeling
-For modeling I used Logisitic Regression, XGBoost and Random Forest. I tried different techniques like SMOTE, standard scaling, onehotencoder and hyper-parameter tuning for my modeling processes to see which gives me the best model.
+* For modeling I used Logisitic Regression, XGBoost and Random Forest. I tried different techniques like SMOTE, standard scaling, onehotencoder and hyper-parameter tuning for my modeling processes to see which gives me the best model.
 
-* Random Forest was my best preforming model with an accuracy score of 94% and precision score of 83%.
+<img width="1012" alt="Screen Shot 2021-10-27 at 4 50 56 PM" src="https://user-images.githubusercontent.com/40476299/139145169-dec3f87c-d120-4cef-92cc-5aa4176b9718.png">
+
+* For my final model, Random Forest was my best preforming model with an accuracy score of 94% and precision score of 83%.
 
 ![image](https://user-images.githubusercontent.com/40476299/139138731-69f17651-e4c6-4a38-bb0a-82971acefeb6.png)
 
@@ -53,3 +56,6 @@ In conclusion, my best model for predicting the probabilty of whether a listing 
 1. Include data from other cities and comapre it to NYC
 
 2. Look for more data with more features. For example, the date of when a listing was booked to see how maybe holidays could effecting booking
+
+#### Link to Presentation
+https://docs.google.com/presentation/d/17BPPB0jqRJ7QcawzoOdgGGsHK9e_OlYvT2EbGRj9jf8/edit?usp=sharing
