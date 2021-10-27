@@ -41,8 +41,9 @@ My target I will be looking at the 'has_availability' column to see if the a lis
 # Modeling
 For modeling I used Logisitic Regression, XGBoost and Random Forest. I tried different techniques like SMOTE, standard scaling, onehotencoder and hyper-parameter tuning for my modeling processes to see which gives me the best model.
 
-* Random Forest was my best preforming model with an accuracy score of 94% and precision score of 77%.
-<img width="544" alt="Screen Shot 2021-10-27 at 1 49 30 PM" src="https://user-images.githubusercontent.com/40476299/139119202-24ce5705-e4ef-4911-abe0-9215f101be38.png">
+* Random Forest was my best preforming model with an accuracy score of 94% and precision score of 83%.
+
+![image](https://user-images.githubusercontent.com/40476299/139138731-69f17651-e4c6-4a38-bb0a-82971acefeb6.png)
 
 
 # Conclusion
